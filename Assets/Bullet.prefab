@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 5189442347234935900}
   - component: {fileID: 5528901646473439288}
   - component: {fileID: 1888362138979137012}
-  m_Layer: 3
+  - component: {fileID: 2977920495634795424}
+  m_Layer: 6
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.8761926, y: 0.402, z: 1.495}
-  m_LocalScale: {x: 0.4240315, y: 0.56998575, z: 0.8608962}
+  m_LocalScale: {x: 0.7688539, y: 0.71283466, z: 1.560977}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -120,3 +121,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   maxDistance: 100
+  fuerzaEmpuje: 500
+--- !u!54 &2977920495634795424
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776561878369622031}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0

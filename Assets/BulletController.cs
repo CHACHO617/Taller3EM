@@ -23,5 +23,19 @@ public class BulletController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+    }
+
+    public float fuerzaEmpuje = 500.0f;
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemigo"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+            Debug.Log("Colisiono1");
+        }
+        
     }
 }
